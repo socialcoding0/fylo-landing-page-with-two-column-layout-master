@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Raleway:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+
+
+    /* ### Primary */
+
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* ### Accent */
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* ### Neutral */
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+h1,
+h2,
+.button {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a,
+p,
+h1,
+h2,
+input {
+    color: var(--Very-Dark-Blue);
+}
+
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+main {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    min-width: 320px;
+
+
+
+}
+
+
+main>section {
+    display: flex;
+    padding: 0rem 5rem;
+}
+
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one img {
+    width: 13%;
+    min-width: 80px;
+}
+
+.one ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.one ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.two {
+    margin-top: 4rem;
+
+
+}
+
+.two .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    gap: 1rem;
+    min-width: 400px;
+}
+
+
+
+
+/* .input-container p {
+    font-size: 1rem;
+} */
+
+.input-controller {
+    /* background-color: aqua; */
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+
+}
+
+.input-controller input {
+    padding-left: .2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    width: 54%;
+    min-width: 160px;
+}
+
+input::placeholder {
+    font-size: .7rem !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-controller .button {
+    width: 32%;
+    line-height: 2rem;
+    padding: .1rem 0rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Bright-Blue);
+    margin-left: .5rem;
+    min-width: 100px;
+}
+
+.input-controller .button:hover {
+    background-color: hsla(224, 93%, 58%, .7);
+}
+
+
+.two img {
+    width: 50%;
+}
+
+.curve {
+    width: 100% !important;
+}
+
+
+.three {
+    padding: 0;
+    margin-top: 8rem;
+    width: 100% !important;
+    /* clip path gerekiyor */
+
+
+}
+
+.three-section {
+    background-color: rgb(248, 248, 254);
+    width: 100%;
+
+    padding: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row !important;
+}
+
+
+.stay-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 44%;
+    min-width: 400px;
+
+}
+
+.three-section>img {
+    width: 50%;
+    min-width: 500px;
+}
+
+.stay-container>p {
+
+    width: 89%;
+
+}
+
+.stay-container a {
+    color: var(--Moderate-Cyan);
+
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.stay-container a i {
+    background-color: var(--Moderate-Cyan);
+    color: var(--Light-Grayish-Blue);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    padding: .1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .5rem;
+}
+
+/* .stay-container h1 {
+    font-size: 2rem;
+} */
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 75%);
+    margin-top: 2rem;
+
+}
+
+.card .quotes {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.card p {
+    line-height: 1.3rem;
+    font-size: .8rem;
+}
+
+
+.profile {
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+
+
+}
+
+.profile .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.profile-names span {
+    font-size: .7rem;
+    color: var(--Light-Gray);
+
+}
+
+.profile-names p {
+    font-weight: 700;
+}
+
+.four {
+    background-color: var(--Desaturated-Blue);
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+
+}
+
+.get-acces-container {
+
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    justify-items: center;
+    gap: .7rem;
+
+
+
+}
+
+.get-acces-container h2 {
+    font-size: 1.8rem;
+    color: var(--Light-Grayish-Blue);
+}
+
+.get-acces-container p {
+    font-size: .9rem;
+    color: var(--Light-Grayish-Blue);
+}
+
+.input-free-controller {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    gap: 1rem;
+}
+
+
+.input-free-controller input {
+    padding-left: .2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    width: 100%;
+    min-width: 160px;
+}
+
+
+.input-free-controller .button {
+    width: 50%;
+    line-height: 2rem;
+    padding: .1rem 0rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Bright-Blue);
+
+    min-width: 100px;
+}
+
+.input-free-controller .button:hover {
+    background-color: hsla(224, 93%, 68%);
+}
+
+.five {
+
+    background-color: var(--Very-Dark-Blue);
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    align-items: flex-start;
+    padding-right: 15rem;
+}
+
+
+.adress {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -4rem;
+}
+
+.adress svg path {
+    fill: white;
+}
+
+.phone-email {
+
+    display: flex;
+    gap: 1rem;
+}
+
+.phone-email p {
+    color: var(--Light-Grayish-Blue);
+    font-size: .9rem;
+}
+
+.footer-nav {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-nav a {
+    color: var(--Light-Grayish-Blue);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.footer-nav a:hover {
+    color: hsl(224, 93%, 58%);
+}
+
+.social-media {
+    display: flex;
+
+}
+
+.social-media i {
+    font-size: .9rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-left: .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media i:hover {
+    color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+    .one ul {
+        gap: .5rem;
+    }
+
+    .one ul a {
+        font-size: .8rem;
+    }
+
+
+    .two {
+        gap: 4rem;
+
+    }
+
+    .two .input-container {
+
+        min-width: 0px;
+        text-align: center;
+        order: 2;
+        gap: 2rem;
+    }
+
+    .two img {
+        order: 1;
+    }
+
+    .two img,
+    .two .input-container {
+        width: 100%;
+    }
+
+    .three-section {
+        gap: 4rem;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+        flex-direction: column !important;
+    }
+
+    .three-section img {
+        min-width: 0;
+    }
+
+    .stay-container {
+        width: 100%;
+        order: 2;
+        align-items: center;
+        min-width: 0;
+    }
+
+
+
+
+
+    .three-section>img {
+        order: 1;
+        width: 100%;
+    }
+
+    .stay-container h1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .stay-container p {
+        width: 100%;
+    }
+
+    .stay-container a {
+        justify-content: center;
+    }
+
+    .card {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .four {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .get-acces-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .input-free-controller {
+        width: 100%;
+        align-items: center;
+    }
+
+    .input-free-controller input,
+    .input-free-controller .button {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .five {
+        flex-direction: column;
+        gap: 3rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+
+
+    }
+
+    .adress {
+        margin-top: 0;
+        gap: 2rem;
+
+    }
+
+    .social-media {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:570px) {
+
+    .one ul a {
+        font-size: .7rem;
+    }
+
+    main>section {
+        padding: 0rem 2rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+
+
+
+    .input-controller input,
+    .input-controller .button {
+        width: 100%;
+    }
+
+    .get-acces-container {
+        min-width: 0;
+    }
+
+    .three-section {
+        padding: 0rem 2rem;
+    }
+
+}
