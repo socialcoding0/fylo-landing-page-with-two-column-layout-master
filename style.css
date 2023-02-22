@@ -83,6 +83,9 @@ main>section {
     padding: 0rem 5rem;
 }
 
+li {
+    list-style: none;
+}
 
 .one,
 .two,
