@@ -59,6 +59,11 @@ input {
     color: var(--Very-Dark-Blue);
 }
 
+.one h2,
+.five h2 {
+    display: none;
+}
+
 .button {
     outline: none;
     border: none;
